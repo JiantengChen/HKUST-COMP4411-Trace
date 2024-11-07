@@ -8,6 +8,51 @@
 #include "scene/ray.h"
 #include "fileio/read.h"
 #include "fileio/parse.h"
+#include "ui/TraceUI.h"
+
+extern TraceUI *traceUI;
+
+// add reflect
+vec3f RayTracer::reflect(ray r, isect i, bool flipNormal)
+{
+	vec3f D = r.getDirection().normalize();
+
+	vec3f normal = i.N.normalize();
+	if (!flipNormal)
+	{
+		normal *= -1;
+	}
+
+	vec3f R = D - 2 * D.dot(normal) * normal;
+
+	return R;
+}
+
+// judge is total internal reflection
+bool RayTracer::isTIR(ray r, isect i, double n_i, double n_t)
+{
+	return (
+		pow(i.N.normalize().dot(r.getDirection().normalize()), 2) <=
+		1 - pow(n_t / n_i, 2));
+}
+
+// refract
+vec3f RayTracer::refract_dir(ray r, isect i, double n_i, double n_t, bool flipNormal)
+{
+	vec3f ret(0, 0, 0);
+	vec3f n = i.N;
+	if (flipNormal)
+	{
+		n *= -1;
+	}
+	vec3f v = r.getDirection().normalize();
+
+	for (int i = 0; i < 3; i++)
+	{
+		ret[i] = n_i / n_t * ((sqrt(pow(n.dot(v), 2) + pow(n_t / n_i, 2) - 1) - n.dot(v)) * n[i] + v[i]);
+	}
+	return ret;
+}
 
 // Trace a top-level ray through normalized window coordinates (x,y)
 // through the projection plane, and out into the scene.  All we do is
@@ -17,7 +62,7 @@ vec3f RayTracer::trace(Scene *scene, double x, double y)
 {
 	ray r(vec3f(0, 0, 0), vec3f(0, 0, 0));
 	scene->getCamera()->rayThrough(x, y, r);
-	return traceRay(scene, r, vec3f(1.0, 1.0, 1.0), 0).clamp();
+	return traceRay(scene, r, vec3f(1.0, 1.0, 1.0), traceUI->getDepth());
 }
 
 // Do recursive ray tracing!  You'll want to insert a lot of code here
@@ -25,7 +70,13 @@ vec3f RayTracer::trace(Scene *scene, double x, double y)
 vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 						  const vec3f &thresh, int depth)
 {
+
+	if (depth < 0 || thresh[0] > 1 || thresh[1] > 1 || thresh[2] > 1)
+	{
+		return {0, 0, 0};
+	}
 	isect i;
+	vec3f intensity;
 
 	if (scene->intersect(r, i))
 	{
@@ -40,15 +91,53 @@ vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 		// more steps: add in the contributions from reflected and refracted
 		// rays.
 
-		const Material& m = i.getMaterial();
-		return m.shade(scene, r, i);
-	
-	} else {
+		const Material &m = i.getMaterial();
+
+		// texture?
+		intensity = m.shade(scene, r, i);
+
+		// refractive index incident and transmitted
+		double n_i, n_t;
+		bool flipNormal;
+		if (r.getDirection().dot(i.N) < 0)
+		{
+			// ray is entering the object
+			n_i = 1.0; // air
+			n_t = i.getMaterial().index;
+			flipNormal = true;
+		}
+		else
+		{
+			// ray is exiting the object
+			n_i = i.getMaterial().index;
+			n_t = 1.0; // air
+			flipNormal = false;
+		}
+
+		vec3f reflection_dir = reflect(r, i, flipNormal);
+		vec3f kr = i.getMaterial().kr;
+		ray reflection_ray(r.at(i.t) + i.N.normalize() * NORMAL_EPSILON, reflection_dir.normalize());
+		intensity += kr.elementwiseMultiply(traceRay(scene, reflection_ray, thresh, depth - 1));
+
+		if (!isTIR(r, i, n_i, n_t))
+		{
+			vec3f refraction_dir = refract_dir(r, i, n_i, n_t, flipNormal);
+			vec3f kt = i.getMaterial().kt;
+			ray refraction_ray(r.at(i.t) + i.N.normalize() * NORMAL_EPSILON, refraction_dir.normalize());
+			intensity += kt.elementwiseMultiply(traceRay(scene, refraction_ray, thresh, depth - 1));
+		}
+
+		intensity = intensity.clamp();
+
+		return intensity;
+	}
+	else
+	{
 		// No intersection.  This ray travels to infinity, so we color
 		// it according to the background color, which in this (simple) case
 		// is just black.
 
-		return vec3f( 0.0, 0.0, 0.0 );
+		return vec3f(0.0, 0.0, 0.0);
 	}
 }
 
