@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9218C26-AD2F-4267-96DB-BE1E5D153DE5}|ray.vcxproj|C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\ui\\TraceUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9218C26-AD2F-4267-96DB-BE1E5D153DE5}|ray.vcxproj|solutionrelative:src\\ui\\TraceUI.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9218C26-AD2F-4267-96DB-BE1E5D153DE5}|ray.vcxproj|C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\ui\\TraceUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B9218C26-AD2F-4267-96DB-BE1E5D153DE5}|ray.vcxproj|solutionrelative:src\\ui\\TraceUI.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B9218C26-AD2F-4267-96DB-BE1E5D153DE5}|ray.vcxproj|C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\RayTracer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{B9218C26-AD2F-4267-96DB-BE1E5D153DE5}|ray.vcxproj|solutionrelative:src\\RayTracer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TraceUI.h",
+              "DocumentMoniker": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\ui\\TraceUI.h",
+              "RelativeDocumentMoniker": "src\\ui\\TraceUI.h",
+              "ToolTip": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\ui\\TraceUI.h",
+              "RelativeToolTip": "src\\ui\\TraceUI.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAWwCAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-09T09:56:33.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TraceUI.cpp",
+              "DocumentMoniker": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\ui\\TraceUI.cpp",
+              "RelativeDocumentMoniker": "src\\ui\\TraceUI.cpp",
+              "ToolTip": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\ui\\TraceUI.cpp",
+              "RelativeToolTip": "src\\ui\\TraceUI.cpp",
+              "ViewState": "AgIAABQBAAAAAAAAAAAWwBgBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-09T09:54:15.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RayTracer.cpp",
               "DocumentMoniker": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\RayTracer.cpp",
               "RelativeDocumentMoniker": "src\\RayTracer.cpp",
               "ToolTip": "C:\\Users\\22566\\Desktop\\proj3\\RaySkelS20\\src\\RayTracer.cpp",
               "RelativeToolTip": "src\\RayTracer.cpp",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAmwFAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAmwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-11-07T15:36:57.765Z",
               "EditorCaption": ""
