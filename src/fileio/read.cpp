@@ -637,6 +637,26 @@ static void processObject(Obj *obj, Scene *scene, mmap &materials)
 
 		scene->ambient_light += tupleToVec(getColorField(child));
 	}
+	// added spot light
+	else if (name == "spot_light")
+	{
+		if (child == NULL)
+		{
+			throw ParseError("No info for spot_light");
+		}
+		else
+		{
+			scene->add(new SpotLight(scene,
+									 tupleToVec(getField(child, "position")),
+									 tupleToVec(getColorField(child)),
+									 tupleToVec(getField(child, "direction")).normalize(),
+									 getField(child, "coneangle")->getScalar(),
+									 getField(child, "focus_constraint")->getScalar(),
+									 getField(child, "constant_attenuation_coeff")->getScalar(),
+									 getField(child, "linear_attenuation_coeff")->getScalar(),
+									 getField(child, "quadratic_attenuation_coeff")->getScalar()));
+		}
+	}
 	else if (name == "sphere" ||
 			 name == "box" ||
 			 name == "cylinder" ||

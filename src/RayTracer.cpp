@@ -95,7 +95,6 @@ vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 
 		const Material &m = i.getMaterial();
 
-		// texture?
 		intensity = m.shade(scene, r, i);
 
 		// refractive index incident and transmitted
