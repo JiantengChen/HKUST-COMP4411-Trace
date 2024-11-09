@@ -1,40 +1,9 @@
-﻿  getopt.cpp
-  main.cpp
-  RayTracer.cpp
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\fileio\parse.h(180,25): warning C4018: “<”: 有符号/无符号不匹配
-  TraceGLWindow.cpp
-  TraceUI.cpp
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\ui\TraceUI.cpp(36,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\ui\TraceUI.cpp(41,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\ui\TraceUI.cpp(180,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\ui\TraceUI.cpp(220,9): warning C4244: “return”: 从“double”转换到“int”，可能丢失数据
-  bitmap.cpp
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\fileio\bitmap.cpp(22,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\fileio\bitmap.cpp(127,12): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  parse.cpp
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\fileio\parse.h(180,25): warning C4018: “<”: 有符号/无符号不匹配
-  read.cpp
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\fileio\parse.h(180,25): warning C4018: “<”: 有符号/无符号不匹配
-  vecmath.cpp
-  camera.cpp
-  light.cpp
-  material.cpp
-  ray.cpp
-  scene.cpp
-  Box.cpp
-  Cone.cpp
-  Cylinder.cpp
-  Sphere.cpp
-  Square.cpp
-  trimesh.cpp
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\SceneObjects\trimesh.cpp(91,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-C:\Users\22566\Desktop\proj3\RaySkelS20\src\SceneObjects\trimesh.cpp(102,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-  正在生成代码...
+﻿  light.cpp
 fltk.lib(case.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(case.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(filename_absolute.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(filename_absolute.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(filename_expand.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(filename_expand.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(filename_isdir.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(filename_isdir.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(filename_list.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(filename_list.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(filename_list.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(filename_list.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(filename_match.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(filename_match.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_abort.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_abort.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
@@ -46,7 +15,7 @@ fltk.lib(Fl_Box.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fl
 fltk.lib(fl_boxtype.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_boxtype.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Browser.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Browser.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Browser_.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Browser_.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(Fl_Button.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(Fl_Button.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(Fl_Button.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Button.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_call_main.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_call_main.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Check_Button.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Check_Button.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Choice.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Choice.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
@@ -57,7 +26,7 @@ fltk.lib(fl_curve.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“
 fltk.lib(Fl_Device.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Device.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_dnd.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_dnd.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Double_Window.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Double_Window.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(fl_draw.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(fl_draw.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(fl_draw.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_draw.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_draw_image.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_draw_image.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_draw_pixmap.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_draw_pixmap.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_File_Browser.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_File_Browser.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
@@ -76,7 +45,7 @@ fltk.lib(Fl_Image.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“
 fltk.lib(Fl_Input.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Input.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Input_.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Input_.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_labeltype.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_labeltype.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(Fl_Light_Button.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(Fl_Light_Button.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(Fl_Light_Button.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Light_Button.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_line_style.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_line_style.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_lock.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_lock.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Menu.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Menu.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
@@ -84,7 +53,7 @@ fltk.lib(Fl_Menu_.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“
 fltk.lib(Fl_Menu_add.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Menu_add.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Menu_Bar.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Menu_Bar.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Menu_Button.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Menu_Button.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(Fl_Menu_Window.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(Fl_Menu_Window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(Fl_Menu_Window.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Menu_Window.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Overlay_Window.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Overlay_Window.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Pixmap.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Pixmap.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_plastic.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_plastic.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
@@ -97,14 +66,14 @@ fltk.lib(fl_round_box.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使�
 fltk.lib(Fl_Scrollbar.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Scrollbar.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Shared_Image.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Shared_Image.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_shortcut.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_shortcut.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(Fl_Single_Window.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(Fl_Single_Window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(Fl_Single_Window.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Single_Window.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Slider.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Slider.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(fl_symbols.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(fl_symbols.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(fl_symbols.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_symbols.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Tile.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Tile.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Tiled_Image.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Tiled_Image.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Tooltip.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Tooltip.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_utf.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_utf.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(fl_utf8.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(fl_utf8.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(fl_utf8.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_utf8.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Valuator.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Valuator.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_Value_Slider.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Value_Slider.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(fl_vertex.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(fl_vertex.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
@@ -116,13 +85,13 @@ fltk.lib(Fl_Window_hotspot.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(
 fltk.lib(Fl_Window_shape.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_Window_shape.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_XBM_Image.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_XBM_Image.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(Fl_XPM_Image.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(Fl_XPM_Image.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(flstring.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(flstring.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(flstring.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(flstring.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(is_spacing.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(is_spacing.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(numericsort.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(numericsort.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-fltk.lib(scandir.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(scandir.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltk.lib(scandir.obj) : warning LNK4099: 未找到 PDB“”(使用“fltk.lib(scandir.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(screen_xywh.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(screen_xywh.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltk.lib(vsnprintf.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltk.lib(vsnprintf.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
-fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltkgl.lib(Fl_Gl_Choice.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+fltkgl.lib(Fl_Gl_Choice.obj) : warning LNK4099: 未找到 PDB“”(使用“fltkgl.lib(Fl_Gl_Choice.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
 fltkgl.lib(Fl_Gl_Device_Plugin.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltkgl.lib(Fl_Gl_Device_Plugin.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltkgl.lib(Fl_Gl_Window.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltkgl.lib(Fl_Gl_Window.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
 fltkgl.lib(gl_draw.obj) : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“fltkgl.lib(gl_draw.obj)”或在“C:\Users\22566\Desktop\proj3\RaySkelS20\Release\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样

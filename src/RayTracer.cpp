@@ -97,21 +97,21 @@ vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 
 		intensity = m.shade(scene, r, i);
 
-		// refractive index incident and transmitted
+		// Refractive indices for incident and transmitted rays
 		double n_i, n_t;
 		bool flipNormal;
 		if (r.getDirection().dot(i.N) < 0)
 		{
 			// ray is entering the object
-			n_i = 1.0; // air
-			n_t = i.getMaterial().index;
-			flipNormal = true;
+			n_i = 1.0;					 // refractive index of air
+			n_t = i.getMaterial().index; // refractive index of the object
+			flipNormal = true;			 // flip the normal
 		}
 		else
 		{
 			// ray is exiting the object
 			n_i = i.getMaterial().index;
-			n_t = 1.0; // air
+			n_t = 1.0;
 			flipNormal = false;
 		}
 
@@ -120,6 +120,7 @@ vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 		ray reflection_ray(r.at(i.t) + i.N.normalize() * NORMAL_EPSILON, reflection_dir.normalize());
 		intensity += kr.elementwiseMultiply(traceRay(scene, reflection_ray, thresh, depth - 1));
 
+		// if not total internal reflection
 		if (!isTIR(r, i, n_i, n_t))
 		{
 			vec3f refraction_dir = refract_dir(r, i, n_i, n_t, flipNormal);

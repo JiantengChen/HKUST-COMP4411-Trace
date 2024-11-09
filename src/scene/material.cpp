@@ -32,10 +32,6 @@ vec3f Material::shade(Scene *scene, const ray &r, const isect &i) const
 		double distance_attenuation = (*it)->distanceAttenuation(P);
 		vec3f all_attentuation = distance_attenuation * shadow_attenuation;
 
-		// TODO if having a texture, use it here
-
-		// TODO if having a bump map, use it here?
-
 		vec3f L = (*it)->getDirection(P);
 		vec3f R = (2 * (N.dot(L)) * N - L).normalize();
 
