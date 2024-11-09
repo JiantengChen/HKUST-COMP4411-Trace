@@ -95,7 +95,6 @@ vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 
 		const Material &m = i.getMaterial();
 
-		// texture?
 		intensity = m.shade(scene, r, i);
 
 		// refractive index incident and transmitted
@@ -125,7 +124,7 @@ vec3f RayTracer::traceRay(Scene *scene, const ray &r,
 		{
 			vec3f refraction_dir = refract_dir(r, i, n_i, n_t, flipNormal);
 			vec3f kt = i.getMaterial().kt;
-			ray refraction_ray(r.at(i.t) + i.N.normalize() * NORMAL_EPSILON, refraction_dir.normalize());
+			ray refraction_ray(r.at(i.t), refraction_dir.normalize());
 			intensity += kt.elementwiseMultiply(traceRay(scene, refraction_ray, thresh, depth - 1));
 		}
 
